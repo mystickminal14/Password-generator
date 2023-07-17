@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="pwgenerator.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo&family=Amatic+SC&family=Bangers&family=Bebas+Neue&family=Boogaloo&family=Dancing+Script:wght@500&family=Foldit:wght@600&family=Hammersmith+One&family=Kalam&family=Kaushan+Script&family=League+Gothic&family=Lobster+Two&family=Oswald&family=Patrick+Hand&family=Poppins:wght@200&family=Roboto+Condensed&family=Roboto:wght@500&family=Rouge+Script&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/402d710096.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div> <input type="text" id="pw" readonly>
+            <button id="c"> <i class="fa-solid fa-copy"></i></button>
+        </div>
+
+        <div class="opt">
+            <div><label>Password length(8-17) :</label>
+                <input type="number" id="slider" value="6" min="6" max="16" required>
+            </div>
+
+            <div class="mob">
+                <label for="checkbox1">include upper case letter</label>
+
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+
+
+            </div>
+            <div>
+                <label for="checkbox2">include special character </label>
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+
+            </div>
+
+            <div>
+                <label for="checkbox3">include lowecase letters</label>
+                <input type="checkbox" id="checkbox3" name="checkbox3">
+
+            </div>
+            <div>
+                <label for="checkbox4">include Numbers (0-9) </label>
+                <input type="checkbox" id="checkbox4" name="checkbox4">
+
+            </div>
+
+
+        </div>
+        <button id="generateBtn">Generate</button>
+    </div>
+    <script src="pwgenerator.js"></script>
+</body>
+
+</html>

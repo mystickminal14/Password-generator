@@ -1,0 +1,136 @@
+:root {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #52c9c2, #20a39e);
+overflow-y: hidden;
+font-family:'hammersmith one';
+display:flex;
+justify-content:center;
+align-items:center;
+  
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#slider{
+    width:50px;
+    border-radius:0em;
+    text-align:center;
+    cursor:pointer;
+}
+.container{
+    display:flex;
+    box-shadow:0px 0px 6px;
+    flex-direction:column;
+    width:500px;
+    padding:4em;
+margin-left:20px;
+background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px);
+gap:1em;
+   
+}
+input[type='text']{
+    width:370px;
+    border-radius:10px;
+    padding:0.2em;
+    outline:none;
+    border:2px solid black;
+    font-family:hammersmith one;
+    padding:0.5em;
+    box-shadow:0px 0px 5px;
+}
+.fa-copy{
+    font-size:2.5rem;
+    
+}
+#c{
+    position:absolute;
+    margin-left:-35px;
+    margin-top:4px;
+background:transparent;
+border:none;
+}
+.opt{
+    display:flex;
+    flex-direction: column;
+    gap:0.8em;
+}
+.mob input[type='checkbox']{
+
+font-family:poppins;
+font-weight:bold;
+
+}
+#checkbox1{
+    margin-left:0.3em;
+  
+}
+#checkbox2{
+    margin-left:0.4em;
+}
+#checkbox3{
+    margin-left:0.7em;
+}
+#checkbox4{
+    margin-left:1.4em;
+    
+}
+input[type='number']{
+    margin-left:0.8em;
+    height:30px;
+    font-family:poppins;
+    font-weight:bold;
+ border:2px solid rgb(52, 3, 3);
+ box-shadow:0px 0px 3px;
+}
+#generateBtn{
+    padding:0.4em;
+    border:2px solid black;
+    border-radius:10px;
+    font-family:hammersmith one;
+    text-transform:uppercase;
+    font-weight: bold;
+    background:rgb(8, 231, 164);
+    cursor:pointer;
+    transition:0.3s ease;
+    box-shadow:0px 0px 4px;
+    font-size:1.5rem;
+    letter-spacing:0.2em;
+}
+#generateBtn:hover{
+    transform:translateY(-5px);
+    color:blue;
+}
+@media (max-width:535px){
+    .container{
+        width:350px;
+        padding:1em;
+    }
+    input[type='text']{
+        width:300px;
+    }
+}
+@media (max-width:393px){
+    .container{
+        width:250px;
+      
+    }
+    input[type='text']{
+        width:200px;
+    }
+}
